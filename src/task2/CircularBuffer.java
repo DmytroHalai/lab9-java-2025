@@ -1,3 +1,5 @@
+package task2;
+
 public class CircularBuffer {
     private final String[] buffer;
     private final int capacity;

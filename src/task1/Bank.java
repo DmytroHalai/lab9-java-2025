@@ -1,3 +1,5 @@
+package task1;
+
 public class Bank {
 
     public void transfer(Account from, Account to, int amount) {

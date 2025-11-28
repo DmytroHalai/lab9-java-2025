@@ -1,3 +1,5 @@
+package task2;
+
 public class ProducerConsumerApp {
 
     private static final int BUFFER_SIZE_1 = 10;

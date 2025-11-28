@@ -1,3 +1,5 @@
+package task1;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -8,8 +10,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class BankTransferTest {
 
-    private static final int NUM_ACCOUNTS = 1000;
-    private static final int NUM_THREADS = 400;
+    private static final int NUM_ACCOUNTS = 100;
+    private static final int NUM_THREADS = 2000;
     private static final int NUM_TRANSFERS_PER_THREAD = 300;
     private static final Random RANDOM = new Random();
 
