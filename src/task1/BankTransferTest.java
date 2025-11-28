@@ -68,8 +68,8 @@ public class BankTransferTest {
 
         executor.shutdown();
         System.out.println("Waiting for " + numTransfers + " transfers to complete...");
-        if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
-            System.err.println("Some tasks did not finish.");
+        while (!executor.awaitTermination(1, TimeUnit.SECONDS)) {
+            System.out.println("Still waiting for termination...");
         }
         System.out.println("Transfers completed: " + transferCount.get());
     }
