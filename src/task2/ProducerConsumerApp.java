@@ -27,7 +27,7 @@ public class ProducerConsumerApp {
                     messageCount++;
                     String message = String.format("Thread No %d generated message %d", threadId, messageCount);
                     buffer1.put(message);
-                    Thread.sleep(50);
+                    Thread.sleep(100);
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -48,10 +48,8 @@ public class ProducerConsumerApp {
             try {
                 while (true) {
                     String consumedMessage = buffer1.get();
-
                     String translatedMessage = String.format("Thread No %d translated message: [%s]", threadId, consumedMessage);
                     buffer2.put(translatedMessage);
-
                     Thread.sleep(100);
                 }
             } catch (InterruptedException e) {
